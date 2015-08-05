@@ -1,7 +1,9 @@
 
+![alt tag](https://travis-ci.org/toygard/VideoSplash.svg)
+
 # VideoSplash - Video based UIViewController
 
-![alt tag](https://travis-ci.org/toygard/VideoSplash.svg)
+![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 
 ##Introduction
 
