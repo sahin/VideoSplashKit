@@ -9,36 +9,36 @@
 import UIKit
 import MediaPlayer
 
-enum ScalingMode {
+public enum ScalingMode {
   case AspectFill
   case AspectFit
   case Fill
   case None
 }
 
-class VideoSplashViewController: UIViewController {
+public class VideoSplashViewController: UIViewController {
 
   private let moviePlayer = MPMoviePlayerController()
-  var contentURL: NSURL = NSURL() {
+  public var contentURL: NSURL = NSURL() {
     didSet {
       setMoviePlayer(contentURL)
     }
   }
 
-  var videoFrame: CGRect = CGRect()
-  var startTime: CGFloat = 0.0
-  var duration: CGFloat = 0.0
-  var backgroundColor: UIColor = UIColor.blackColor() {
+  public var videoFrame: CGRect = CGRect()
+  public var startTime: CGFloat = 0.0
+  public var duration: CGFloat = 0.0
+  public var backgroundColor: UIColor = UIColor.blackColor() {
     didSet {
       view.backgroundColor = backgroundColor
     }
   }
-  var alpha: CGFloat = CGFloat() {
+  public var alpha: CGFloat = CGFloat() {
     didSet {
       moviePlayer.view.alpha = alpha
     }
   }
-  var alwaysRepeat: Bool = true {
+  public var alwaysRepeat: Bool = true {
     didSet {
       if alwaysRepeat {
         moviePlayer.repeatMode = MPMovieRepeatMode.One
@@ -47,7 +47,7 @@ class VideoSplashViewController: UIViewController {
       }
     }
   }
-  var fillMode: ScalingMode = .AspectFill {
+  public var fillMode: ScalingMode = .AspectFill {
     didSet {
       switch fillMode {
       case .AspectFill:
@@ -64,7 +64,7 @@ class VideoSplashViewController: UIViewController {
     }
   }
 
-  override func viewDidAppear(animated: Bool) {
+  override public func viewDidAppear(animated: Bool) {
     moviePlayer.view.frame = videoFrame
     moviePlayer.controlStyle = MPMovieControlStyle.None
     moviePlayer.movieSourceType = MPMovieSourceType.File
@@ -87,11 +87,11 @@ class VideoSplashViewController: UIViewController {
     }
   }
 
-  override func viewDidLoad() {
+  override public func viewDidLoad() {
     super.viewDidLoad()
   }
 
-  override func didReceiveMemoryWarning() {
+  override public func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
 
