@@ -1,10 +1,7 @@
 
 ![alt tag](https://travis-ci.org/toygard/VideoSplash.svg)
-
 # VideoSplash - Video based UIViewController
-
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
-
 ##Introduction
 
 __Requires iOS 8 or later and Xcode 6.1+__
