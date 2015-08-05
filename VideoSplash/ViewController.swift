@@ -47,6 +47,5 @@ class ViewController: VideoSplashViewController {
     return true
   }
 
-
 }
 

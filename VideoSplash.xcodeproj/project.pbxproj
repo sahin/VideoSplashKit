@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		C3866AC11B719452002C4FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AC01B719452002C4FA3 /* AppDelegate.swift */; };
 		C3866AD71B719452002C4FA3 /* VideoSplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AD61B719452002C4FA3 /* VideoSplashTests.swift */; };
-		C3866AE51B7195BC002C4FA3 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */; };
-		C3866AE61B7195BC002C4FA3 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */; };
 		C3866AE71B7195BC002C4FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE41B7195BC002C4FA3 /* ViewController.swift */; };
 		C3866B0B1B71A9D5002C4FA3 /* btnRegister.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B061B71A9D5002C4FA3 /* btnRegister.png */; };
 		C3866B0C1B71A9D5002C4FA3 /* btnSignin.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B071B71A9D5002C4FA3 /* btnSignin.png */; };
 		C3866B0D1B71A9D5002C4FA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B081B71A9D5002C4FA3 /* Default-568h@2x.png */; };
 		C3866B0E1B71A9D5002C4FA3 /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3866B091B71A9D5002C4FA3 /* Museo500-Regular.otf */; };
 		C3866B0F1B71A9D5002C4FA3 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C3866B0A1B71A9D5002C4FA3 /* test.mp4 */; };
+		C38BEE711B727785009E4F64 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BEE6F1B727785009E4F64 /* VideoCutter.swift */; };
+		C38BEE721B727785009E4F64 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BEE701B727785009E4F64 /* VideoSplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,14 @@
 		C3866AD01B719452002C4FA3 /* VideoSplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoSplashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3866AD51B719452002C4FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3866AD61B719452002C4FA3 /* VideoSplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashTests.swift; sourceTree = "<group>"; };
-		C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
-		C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		C3866AE41B7195BC002C4FA3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3866B061B71A9D5002C4FA3 /* btnRegister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnRegister.png; path = Resources/btnRegister.png; sourceTree = "<group>"; };
 		C3866B071B71A9D5002C4FA3 /* btnSignin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSignin.png; path = Resources/btnSignin.png; sourceTree = "<group>"; };
 		C3866B081B71A9D5002C4FA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		C3866B091B71A9D5002C4FA3 /* Museo500-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Museo500-Regular.otf"; path = "Resources/Museo500-Regular.otf"; sourceTree = "<group>"; };
 		C3866B0A1B71A9D5002C4FA3 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.mp4; path = Resources/test.mp4; sourceTree = "<group>"; };
+		C38BEE6F1B727785009E4F64 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = Source/VideoCutter.swift; sourceTree = "<group>"; };
+		C38BEE701B727785009E4F64 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = Source/VideoSplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,7 @@
 			children = (
 				C3866AC01B719452002C4FA3 /* AppDelegate.swift */,
 				C3866AE41B7195BC002C4FA3 /* ViewController.swift */,
-				C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */,
-				C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */,
+				C38BEE6A1B727723009E4F64 /* Source */,
 				C3866B051B71A9CA002C4FA3 /* Resources */,
 				C3866ABE1B719452002C4FA3 /* Supporting Files */,
 			);
@@ -130,6 +129,15 @@
 				C3866B0A1B71A9D5002C4FA3 /* test.mp4 */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		C38BEE6A1B727723009E4F64 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C38BEE6F1B727785009E4F64 /* VideoCutter.swift */,
+				C38BEE701B727785009E4F64 /* VideoSplashViewController.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3866AE51B7195BC002C4FA3 /* VideoCutter.swift in Sources */,
+				C38BEE711B727785009E4F64 /* VideoCutter.swift in Sources */,
 				C3866AC11B719452002C4FA3 /* AppDelegate.swift in Sources */,
 				C3866AE71B7195BC002C4FA3 /* ViewController.swift in Sources */,
-				C3866AE61B7195BC002C4FA3 /* VideoSplashViewController.swift in Sources */,
+				C38BEE721B727785009E4F64 /* VideoSplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
