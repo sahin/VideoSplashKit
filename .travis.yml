@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode61
+xcodebuild: xctool -project VideoSplash.xcodeproj -scheme VideoSplash build
+xcode_scheme: VideoSplashTests

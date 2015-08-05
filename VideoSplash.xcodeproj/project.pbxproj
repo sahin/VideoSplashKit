@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3866AC11B719452002C4FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AC01B719452002C4FA3 /* AppDelegate.swift */; };
+		C3866AD71B719452002C4FA3 /* VideoSplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AD61B719452002C4FA3 /* VideoSplashTests.swift */; };
+		C3866AE51B7195BC002C4FA3 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */; };
+		C3866AE61B7195BC002C4FA3 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */; };
+		C3866AE71B7195BC002C4FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3866AE41B7195BC002C4FA3 /* ViewController.swift */; };
+		C3866B0B1B71A9D5002C4FA3 /* btnRegister.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B061B71A9D5002C4FA3 /* btnRegister.png */; };
+		C3866B0C1B71A9D5002C4FA3 /* btnSignin.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B071B71A9D5002C4FA3 /* btnSignin.png */; };
+		C3866B0D1B71A9D5002C4FA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3866B081B71A9D5002C4FA3 /* Default-568h@2x.png */; };
+		C3866B0E1B71A9D5002C4FA3 /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3866B091B71A9D5002C4FA3 /* Museo500-Regular.otf */; };
+		C3866B0F1B71A9D5002C4FA3 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C3866B0A1B71A9D5002C4FA3 /* test.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3866AD11B719452002C4FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3866AB31B719452002C4FA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3866ABA1B719452002C4FA3;
+			remoteInfo = VideoSplash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3866ABB1B719452002C4FA3 /* VideoSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoSplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3866ABF1B719452002C4FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3866AC01B719452002C4FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3866AD01B719452002C4FA3 /* VideoSplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoSplashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3866AD51B719452002C4FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3866AD61B719452002C4FA3 /* VideoSplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashTests.swift; sourceTree = "<group>"; };
+		C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		C3866AE41B7195BC002C4FA3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3866B061B71A9D5002C4FA3 /* btnRegister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnRegister.png; path = Resources/btnRegister.png; sourceTree = "<group>"; };
+		C3866B071B71A9D5002C4FA3 /* btnSignin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSignin.png; path = Resources/btnSignin.png; sourceTree = "<group>"; };
+		C3866B081B71A9D5002C4FA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		C3866B091B71A9D5002C4FA3 /* Museo500-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Museo500-Regular.otf"; path = "Resources/Museo500-Regular.otf"; sourceTree = "<group>"; };
+		C3866B0A1B71A9D5002C4FA3 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.mp4; path = Resources/test.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3866AB81B719452002C4FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3866ACD1B719452002C4FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3866AB21B719452002C4FA3 = {
+			isa = PBXGroup;
+			children = (
+				C3866ABD1B719452002C4FA3 /* VideoSplash */,
+				C3866AD31B719452002C4FA3 /* VideoSplashTests */,
+				C3866ABC1B719452002C4FA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3866ABC1B719452002C4FA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3866ABB1B719452002C4FA3 /* VideoSplash.app */,
+				C3866AD01B719452002C4FA3 /* VideoSplashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3866ABD1B719452002C4FA3 /* VideoSplash */ = {
+			isa = PBXGroup;
+			children = (
+				C3866AC01B719452002C4FA3 /* AppDelegate.swift */,
+				C3866AE41B7195BC002C4FA3 /* ViewController.swift */,
+				C3866AE31B7195BC002C4FA3 /* VideoSplashViewController.swift */,
+				C3866AE21B7195BC002C4FA3 /* VideoCutter.swift */,
+				C3866B051B71A9CA002C4FA3 /* Resources */,
+				C3866ABE1B719452002C4FA3 /* Supporting Files */,
+			);
+			path = VideoSplash;
+			sourceTree = "<group>";
+		};
+		C3866ABE1B719452002C4FA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3866ABF1B719452002C4FA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3866AD31B719452002C4FA3 /* VideoSplashTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3866AD61B719452002C4FA3 /* VideoSplashTests.swift */,
+				C3866AD41B719452002C4FA3 /* Supporting Files */,
+			);
+			path = VideoSplashTests;
+			sourceTree = "<group>";
+		};
+		C3866AD41B719452002C4FA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3866AD51B719452002C4FA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3866B051B71A9CA002C4FA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3866B061B71A9D5002C4FA3 /* btnRegister.png */,
+				C3866B071B71A9D5002C4FA3 /* btnSignin.png */,
+				C3866B081B71A9D5002C4FA3 /* Default-568h@2x.png */,
+				C3866B091B71A9D5002C4FA3 /* Museo500-Regular.otf */,
+				C3866B0A1B71A9D5002C4FA3 /* test.mp4 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3866ABA1B719452002C4FA3 /* VideoSplash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3866ADA1B719452002C4FA3 /* Build configuration list for PBXNativeTarget "VideoSplash" */;
+			buildPhases = (
+				C3866AB71B719452002C4FA3 /* Sources */,
+				C3866AB81B719452002C4FA3 /* Frameworks */,
+				C3866AB91B719452002C4FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoSplash;
+			productName = VideoSplash;
+			productReference = C3866ABB1B719452002C4FA3 /* VideoSplash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3866ACF1B719452002C4FA3 /* VideoSplashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3866ADD1B719452002C4FA3 /* Build configuration list for PBXNativeTarget "VideoSplashTests" */;
+			buildPhases = (
+				C3866ACC1B719452002C4FA3 /* Sources */,
+				C3866ACD1B719452002C4FA3 /* Frameworks */,
+				C3866ACE1B719452002C4FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3866AD21B719452002C4FA3 /* PBXTargetDependency */,
+			);
+			name = VideoSplashTests;
+			productName = VideoSplashTests;
+			productReference = C3866AD01B719452002C4FA3 /* VideoSplashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3866AB31B719452002C4FA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Toygar Dündaralp";
+				TargetAttributes = {
+					C3866ABA1B719452002C4FA3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C3866ACF1B719452002C4FA3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C3866ABA1B719452002C4FA3;
+					};
+				};
+			};
+			buildConfigurationList = C3866AB61B719452002C4FA3 /* Build configuration list for PBXProject "VideoSplash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3866AB21B719452002C4FA3;
+			productRefGroup = C3866ABC1B719452002C4FA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3866ABA1B719452002C4FA3 /* VideoSplash */,
+				C3866ACF1B719452002C4FA3 /* VideoSplashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3866AB91B719452002C4FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3866B0E1B71A9D5002C4FA3 /* Museo500-Regular.otf in Resources */,
+				C3866B0C1B71A9D5002C4FA3 /* btnSignin.png in Resources */,
+				C3866B0B1B71A9D5002C4FA3 /* btnRegister.png in Resources */,
+				C3866B0F1B71A9D5002C4FA3 /* test.mp4 in Resources */,
+				C3866B0D1B71A9D5002C4FA3 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3866ACE1B719452002C4FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3866AB71B719452002C4FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3866AE51B7195BC002C4FA3 /* VideoCutter.swift in Sources */,
+				C3866AC11B719452002C4FA3 /* AppDelegate.swift in Sources */,
+				C3866AE71B7195BC002C4FA3 /* ViewController.swift in Sources */,
+				C3866AE61B7195BC002C4FA3 /* VideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3866ACC1B719452002C4FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3866AD71B719452002C4FA3 /* VideoSplashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3866AD21B719452002C4FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3866ABA1B719452002C4FA3 /* VideoSplash */;
+			targetProxy = C3866AD11B719452002C4FA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3866AD81B719452002C4FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3866AD91B719452002C4FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3866ADB1B719452002C4FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VideoSplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3866ADC1B719452002C4FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VideoSplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3866ADE1B719452002C4FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VideoSplashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoSplash.app/VideoSplash";
+			};
+			name = Debug;
+		};
+		C3866ADF1B719452002C4FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VideoSplashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoSplash.app/VideoSplash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3866AB61B719452002C4FA3 /* Build configuration list for PBXProject "VideoSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3866AD81B719452002C4FA3 /* Debug */,
+				C3866AD91B719452002C4FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3866ADA1B719452002C4FA3 /* Build configuration list for PBXNativeTarget "VideoSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3866ADB1B719452002C4FA3 /* Debug */,
+				C3866ADC1B719452002C4FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3866ADD1B719452002C4FA3 /* Build configuration list for PBXNativeTarget "VideoSplashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3866ADE1B719452002C4FA3 /* Debug */,
+				C3866ADF1B719452002C4FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3866AB31B719452002C4FA3 /* Project object */;
+}
