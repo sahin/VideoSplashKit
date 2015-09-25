@@ -14,14 +14,15 @@ class ViewController: VideoSplashViewController {
     super.viewDidLoad()
     let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
     self.videoFrame = view.frame
-    self.fillMode = .AspectFill
+    self.fillMode = .ResizeAspectFill
     self.alwaysRepeat = true
-    self.startTime = 11.0
+    self.startTime = 12.0
     self.duration = 4.0
     self.alpha = 0.7
     self.backgroundColor = UIColor.blackColor()
     self.contentURL = url
-
+    
+    
     // Sample UI
     var sampleButton = UIButton(frame: CGRect(x: 15.0, y: 500.0, width: 140.0, height: 42.0))
     sampleButton.setImage(UIImage(named: "btnSignin"), forState: .Normal)

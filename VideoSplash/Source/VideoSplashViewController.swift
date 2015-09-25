@@ -8,17 +8,18 @@
 
 import UIKit
 import MediaPlayer
+import AVKit
 
 public enum ScalingMode {
-  case AspectFill
-  case AspectFit
-  case Fill
-  case None
+  case Resize
+  case ResizeAspect
+  case ResizeAspectFill
 }
 
 public class VideoSplashViewController: UIViewController {
 
-  private let moviePlayer = MPMoviePlayerController()
+  private let moviePlayer = AVPlayerViewController()
+  private var moviePlayerSoundLevel: Float = 1.0
   public var contentURL: NSURL = NSURL() {
     didSet {
       setMoviePlayer(contentURL)
@@ -33,6 +34,7 @@ public class VideoSplashViewController: UIViewController {
       view.backgroundColor = backgroundColor
     }
   }
+  
   public var alpha: CGFloat = CGFloat() {
     didSet {
       moviePlayer.view.alpha = alpha
@@ -41,33 +43,36 @@ public class VideoSplashViewController: UIViewController {
   public var alwaysRepeat: Bool = true {
     didSet {
       if alwaysRepeat {
-        moviePlayer.repeatMode = MPMovieRepeatMode.One
-      }else{
-        moviePlayer.repeatMode = MPMovieRepeatMode.None
+        NSNotificationCenter.defaultCenter().addObserver(self,
+          selector: "playerItemDidReachEnd",
+          name: AVPlayerItemDidPlayToEndTimeNotification,
+          object: moviePlayer.player?.currentItem)
       }
     }
   }
-  public var fillMode: ScalingMode = .AspectFill {
+  public var fillMode: ScalingMode = .ResizeAspectFill {
     didSet {
       switch fillMode {
-      case .AspectFill:
-        moviePlayer.scalingMode = MPMovieScalingMode.AspectFill
-      case .AspectFit:
-        moviePlayer.scalingMode = MPMovieScalingMode.AspectFit
-      case .Fill:
-        moviePlayer.scalingMode = MPMovieScalingMode.Fill
-      case .None:
-        moviePlayer.scalingMode = MPMovieScalingMode.None
+      case .Resize:
+        moviePlayer.videoGravity = AVLayerVideoGravityResize
+      case .ResizeAspect:
+        moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
+      case .ResizeAspectFill:
+        moviePlayer.videoGravity = AVLayerVideoGravityResizeAspectFill
       }
     }
   }
 
   override public func viewDidAppear(animated: Bool) {
     moviePlayer.view.frame = videoFrame
-    moviePlayer.controlStyle = MPMovieControlStyle.None
-    moviePlayer.movieSourceType = MPMovieSourceType.File
+    moviePlayer.showsPlaybackControls = false
     view.addSubview(moviePlayer.view)
     view.sendSubviewToBack(moviePlayer.view)
+  }
+  
+  override public func viewWillDisappear(animated: Bool) {
+    super.viewDidDisappear(animated)
+    NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
   private func setMoviePlayer(url: NSURL){
@@ -77,8 +82,8 @@ public class VideoSplashViewController: UIViewController {
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
           dispatch_async(dispatch_get_main_queue()) {
-            self.moviePlayer.contentURL = path
-            self.moviePlayer.play()
+            self.moviePlayer.player = AVPlayer(URL: path)
+            self.moviePlayer.player?.play()
           }
         }
       }
@@ -91,5 +96,10 @@ public class VideoSplashViewController: UIViewController {
 
   override public func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
+  }
+  
+  func playerItemDidReachEnd() {
+    moviePlayer.player?.seekToTime(kCMTimeZero)
+    moviePlayer.player?.play()
   }
 }
