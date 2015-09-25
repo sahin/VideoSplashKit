@@ -34,7 +34,15 @@ public class VideoSplashViewController: UIViewController {
       view.backgroundColor = backgroundColor
     }
   }
-  
+  public var sound: Bool = true {
+    didSet {
+      if sound {
+        moviePlayerSoundLevel = 1.0
+      }else{
+        moviePlayerSoundLevel = 0.0
+      }
+    }
+  }
   public var alpha: CGFloat = CGFloat() {
     didSet {
       moviePlayer.view.alpha = alpha
@@ -84,6 +92,7 @@ public class VideoSplashViewController: UIViewController {
           dispatch_async(dispatch_get_main_queue()) {
             self.moviePlayer.player = AVPlayer(URL: path)
             self.moviePlayer.player?.play()
+            self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
           }
         }
       }

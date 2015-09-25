@@ -16,6 +16,7 @@ class ViewController: VideoSplashViewController {
     self.videoFrame = view.frame
     self.fillMode = .ResizeAspectFill
     self.alwaysRepeat = true
+    self.sound = true
     self.startTime = 12.0
     self.duration = 4.0
     self.alpha = 0.7
