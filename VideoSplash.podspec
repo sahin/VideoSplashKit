@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { "Toygar Dündaralp" => "tdundaralp@gmail.com" }
   s.social_media_url = 'https://twitter.com/ToygarDndaralp'
   s.source           = { :git => "https://github.com/toygard/VideoSplash.git", :tag => s.version.to_s }
-  s.platform         = :ios, '7.0'
+  s.platform         = :ios, '8.0'
   s.requires_arc     = true
   s.source_files     = 'VideoSplash/Source/*.swift'
 end
