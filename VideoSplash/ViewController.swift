@@ -12,7 +12,7 @@ class ViewController: VideoSplashViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)!
+    let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
     self.videoFrame = view.frame
     self.fillMode = .AspectFill
     self.alwaysRepeat = true

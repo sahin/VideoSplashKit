@@ -25,7 +25,7 @@ class VideoSplashTests: XCTestCase {
   func testVideoCut(){
     let expectation = expectationWithDescription("VideoCutter")
     let videoCutter = VideoCutter()
-    let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)!
+    let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
     videoCutter.cropVideoWithUrl(videoUrl: url, startTime: 11.0, duration: 1.0) { (videoPath, error) -> Void in
       if let path = videoPath as NSURL? {
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
