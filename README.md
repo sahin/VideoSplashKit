@@ -4,7 +4,7 @@
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 ##Introduction
 
-__Requires iOS 8 or later and Xcode 6.1+__
+__Requires iOS 8 or later and Xcode 7.0+__
 
 ##Installation
 
@@ -41,7 +41,3 @@ class ViewController: VideoSplashViewController {
   }
 }
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/toygard/videosplash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
