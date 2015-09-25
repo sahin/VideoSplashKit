@@ -41,7 +41,3 @@ class ViewController: VideoSplashViewController {
   }
 }
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/toygard/videosplash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
