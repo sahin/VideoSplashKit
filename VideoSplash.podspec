@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VideoSplash"
-  s.version          = "1.0.5"
+  s.version          = "1.0.6"
   s.summary          = "Video based UIViewController"
   s.homepage         = "https://github.com/toygard/VideoSplash"
   s.license          = 'MIT'
