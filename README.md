@@ -4,7 +4,7 @@
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 ##Introduction
 
-__Requires iOS 8 or later and Xcode 7.0+__<br/>
+__Requires iOS 8 or later and Xcode 6.1+__<br/>
  Swift support uses dynamic frameworks and is therefore only supported on iOS > 8.
 
 ##Installation
