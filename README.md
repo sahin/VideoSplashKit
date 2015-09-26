@@ -4,7 +4,8 @@
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 ##Introduction
 
-__Requires iOS 8 or later and Xcode 7.0+__
+__Requires iOS 8 or later and Xcode 7.0+__<br/>
+ Swift support uses dynamic frameworks and is therefore only supported on iOS > 8.
 
 ##Installation
 
@@ -12,7 +13,9 @@ To install via CocoaPods add this line to your `Podfile`.
 
 ```
 use_frameworks!
-
+```
+and
+```
 pod "VideoSplash"
 ```
 
