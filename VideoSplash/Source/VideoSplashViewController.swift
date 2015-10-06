@@ -91,6 +91,7 @@ public class VideoSplashViewController: UIViewController {
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
           dispatch_async(dispatch_get_main_queue()) {
             self.moviePlayer.player = AVPlayer(URL: path)
+            self.moviePlayer.player?.addObserver(self, forKeyPath: "status", options: .New, context: nil)
             self.moviePlayer.player?.play()
             self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
           }
@@ -98,7 +99,32 @@ public class VideoSplashViewController: UIViewController {
       }
     }
   }
-
+    
+  public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        
+    guard let realObject = object where object != nil else {
+        return
+    }
+    
+    if !realObject.isKindOfClass(AVPlayer){
+        return
+    }
+    
+    if ((realObject as! AVPlayer) != self.moviePlayer.player || keyPath! != "status"){
+        return
+    }
+    
+    if self.moviePlayer.player?.status == AVPlayerStatus.ReadyToPlay{
+        self.movieReadyToPlay()
+    }
+    
+  }
+  
+  //override in subclass
+  public func movieReadyToPlay(){
+        
+  }
+    
   override public func viewDidLoad() {
     super.viewDidLoad()
   }
