@@ -74,6 +74,7 @@ public class VideoSplashViewController: UIViewController {
   override public func viewDidAppear(animated: Bool) {
     moviePlayer.view.frame = videoFrame
     moviePlayer.showsPlaybackControls = false
+    moviePlayer.view.userInteractionEnabled = false
     view.addSubview(moviePlayer.view)
     view.sendSubviewToBack(moviePlayer.view)
   }
