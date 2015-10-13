@@ -121,9 +121,7 @@ public class VideoSplashViewController: UIViewController {
   }
   
   // Override in subclass
-  public func movieReadyToPlay(){
-    print("test")
-  }
+  public func movieReadyToPlay() { }
   
   override public func viewDidLoad() {
     super.viewDidLoad()
@@ -137,4 +135,13 @@ public class VideoSplashViewController: UIViewController {
     moviePlayer.player?.seekToTime(kCMTimeZero)
     moviePlayer.player?.play()
   }
+  
+  func playVideo() {
+    moviePlayer.player?.play()
+  }
+  
+  func pauseVideo() {
+    moviePlayer.player?.pause()
+  }
+  
 }

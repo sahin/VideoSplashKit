@@ -23,7 +23,6 @@ class ViewController: VideoSplashViewController {
     self.backgroundColor = UIColor.blackColor()
     self.contentURL = url
     
-    
     // Sample UI
     var sampleButton = UIButton(frame: CGRect(x: 15.0, y: 500.0, width: 140.0, height: 42.0))
     sampleButton.setImage(UIImage(named: "btnSignin"), forState: .Normal)
@@ -48,6 +47,4 @@ class ViewController: VideoSplashViewController {
   override func prefersStatusBarHidden() -> Bool {
     return true
   }
-
 }
-
