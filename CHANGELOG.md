@@ -1,3 +1,11 @@
+#### Version 1.0.8
+
+* Fixed freezing in the video background mode
+
+#### Version 1.0.7
+
+* Update podspec file
+
 #### Version 1.0.6
 
 * Integrate AVPlayerViewController
