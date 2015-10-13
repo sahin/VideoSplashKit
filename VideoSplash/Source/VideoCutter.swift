@@ -17,31 +17,37 @@ public class VideoCutter: NSObject {
 
   /**
   Block based method for crop video url
-  
+
   @param videoUrl Video url
   @param startTime The starting point of the video segments
   @param duration Total time, video length
 
   */
-  public func cropVideoWithUrl(videoUrl url: NSURL, startTime: CGFloat, duration: CGFloat, completion: ((videoPath: NSURL?, error: NSError?) -> Void)?) {
+  public func cropVideoWithUrl(videoUrl url: NSURL, startTime: CGFloat, duration: CGFloat,
+    completion: ((videoPath: NSURL?, error: NSError?) -> Void)?) {
     let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
     dispatch_async(dispatch_get_global_queue(priority, 0)) {
       let asset = AVURLAsset(URL: url, options: nil)
-      let exportSession = AVAssetExportSession(asset: asset, presetName: "AVAssetExportPresetHighestQuality")
-      let paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-      var outputURL = paths.objectAtIndex(0) as! String
+      let exportSession = AVAssetExportSession(asset: asset,
+        presetName: "AVAssetExportPresetHighestQuality")
+      let paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,
+        .UserDomainMask, true)
+      var outputURL = paths.objectAtIndex(0) as? String
       let manager = NSFileManager.defaultManager()
       do {
-        try manager.createDirectoryAtPath(outputURL, withIntermediateDirectories: true, attributes: nil)
+        try manager.createDirectoryAtPath(
+          outputURL!,
+          withIntermediateDirectories: true,
+          attributes: nil)
       } catch _ {
       }
-      outputURL = outputURL.convert.stringByAppendingPathComponent("output.mp4")
+      outputURL = outputURL!.convert.stringByAppendingPathComponent("output.mp4")
       do {
-        try manager.removeItemAtPath(outputURL)
+        try manager.removeItemAtPath(outputURL!)
       } catch _ {
       }
       if let exportSession = exportSession as AVAssetExportSession? {
-        exportSession.outputURL = NSURL(fileURLWithPath: outputURL)
+        exportSession.outputURL = NSURL(fileURLWithPath: outputURL!)
         exportSession.shouldOptimizeForNetworkUse = true
         exportSession.outputFileType = AVFileTypeMPEG4
         let start = CMTimeMakeWithSeconds(Float64(startTime), 600)

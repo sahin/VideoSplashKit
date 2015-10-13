@@ -14,11 +14,9 @@ class VideoSplashTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
   }
 
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     super.tearDown()
   }
 
@@ -26,7 +24,10 @@ class VideoSplashTests: XCTestCase {
     let expectation = expectationWithDescription("VideoCutter")
     let videoCutter = VideoCutter()
     let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
-    videoCutter.cropVideoWithUrl(videoUrl: url, startTime: 11.0, duration: 1.0) { (videoPath, error) -> Void in
+    videoCutter.cropVideoWithUrl(
+      videoUrl: url,
+      startTime: 11.0,
+      duration: 1.0) { (videoPath, error) -> Void in
       if let path = videoPath as NSURL? {
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
@@ -39,5 +40,4 @@ class VideoSplashTests: XCTestCase {
     }
     self.waitForExpectationsWithTimeout(5.0, handler: nil)
   }
-
 }

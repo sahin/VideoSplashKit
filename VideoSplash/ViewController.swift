@@ -22,7 +22,7 @@ class ViewController: VideoSplashViewController {
     self.alpha = 0.7
     self.backgroundColor = UIColor.blackColor()
     self.contentURL = url
-    
+
     // Sample UI
     var sampleButton = UIButton(frame: CGRect(x: 15.0, y: 500.0, width: 140.0, height: 42.0))
     sampleButton.setImage(UIImage(named: "btnSignin"), forState: .Normal)
