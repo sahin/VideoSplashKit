@@ -1,5 +1,6 @@
 
 [![Build Status](https://travis-ci.org/toygar/VideoSplash.svg)](https://travis-ci.org/toygar/VideoSplash) ![Gitter](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/toygar/VideoSplash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 # VideoSplash - Video based UIViewController
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 ##Introduction
