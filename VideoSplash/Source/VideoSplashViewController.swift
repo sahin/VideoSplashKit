@@ -127,6 +127,10 @@ public class VideoSplashViewController: UIViewController {
       }
   }
 
+  deinit{
+	self.moviePlayer.player?.removeObserver(self, forKeyPath: "status")
+  }
+
   // Override in subclass
   public func movieReadyToPlay() { }
 
