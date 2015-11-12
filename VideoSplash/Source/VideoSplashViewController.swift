@@ -70,6 +70,17 @@ public class VideoSplashViewController: UIViewController {
       }
     }
   }
+    
+   public var restartForeground: Bool = true {
+        didSet {
+            if restartForeground {
+                NSNotificationCenter.defaultCenter().addObserver(self,
+                    selector: "playerItemDidReachEnd",
+                    name: UIApplicationWillEnterForegroundNotification,
+                    object: nil)
+            }
+        }
+    }
 
   override public func viewDidAppear(animated: Bool) {
     moviePlayer.view.frame = videoFrame
