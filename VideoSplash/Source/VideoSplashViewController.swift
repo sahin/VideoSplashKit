@@ -71,7 +71,7 @@ public class VideoSplashViewController: UIViewController {
     }
   }
     
-   public var restartForeground: Bool = true {
+   public var restartForeground: Bool = false {
         didSet {
             if restartForeground {
                 NSNotificationCenter.defaultCenter().addObserver(self,
