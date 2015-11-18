@@ -43,6 +43,7 @@ class ViewController: VideoSplashViewController {
     self.alpha = 0.7
     self.backgroundColor = UIColor.blackColor()
     self.contentURL = url
+    self.restartForeground = true
   }
 }
 ```
