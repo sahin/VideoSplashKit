@@ -92,7 +92,6 @@ public class VideoSplashViewController: UIViewController {
 
   override public func viewWillDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
-    NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
   private func setMoviePlayer(url: NSURL){
@@ -140,6 +139,8 @@ public class VideoSplashViewController: UIViewController {
 
   deinit{
 	self.moviePlayer.player?.removeObserver(self, forKeyPath: "status")
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+
   }
 
   // Override in subclass
