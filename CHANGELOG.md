@@ -1,3 +1,7 @@
+#### Version 1.0.9
+
+* Support TvOS
+
 #### Version 1.0.8
 
 * Fixed freezing in the video background mode
