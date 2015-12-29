@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Sahin Boydas" => "noemail@gmail.com" }
   s.social_media_url = 'https://twitter.com/sahinboydas'
-  s.source           = { :git => "https://github.com/toygar/VideoSplash.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/sahin/VideoSplash.git", :tag => s.version.to_s }
   s.platforms        = { :ios => "8.0", :tvos => "9.0" }
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
