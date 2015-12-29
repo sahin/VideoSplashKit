@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.name             = "VideoSplash"
   s.version          = "1.0.9"
   s.summary          = "Video based UIViewController"
-  s.homepage         = "https://github.com/sahin/VideoSplash"
+  s.homepage         = "https://github.com/movielala/VideoSplash"
   s.license          = 'MIT'
-  s.author           = { "Sahin Boydas" => "noemail@gmail.com" }
-  s.social_media_url = 'https://twitter.com/sahinboydas'
-  s.source           = { :git => "https://github.com/sahin/VideoSplash.git", :tag => s.version.to_s }
+  s.author           = { "Movielala" => "git@movielala.com" }
+  s.social_media_url = 'https://twitter.com/movielala'
+  s.source           = { :git => "https://github.com/movielala/VideoSplash.git", :tag => s.version.to_s }
   s.platforms        = { :ios => "8.0", :tvos => "9.0" }
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
