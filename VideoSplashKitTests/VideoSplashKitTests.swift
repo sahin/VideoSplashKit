@@ -10,7 +10,7 @@ import UIKit
 import XCTest
 import VideoSplash
 
-class VideoSplashTests: XCTestCase {
+class VideoSplashKitTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
