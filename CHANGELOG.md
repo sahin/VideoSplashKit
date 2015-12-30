@@ -1,3 +1,7 @@
+### Version 1.1.0
+
+* Project renamed 'VideoSplashKit'
+
 #### Version 1.0.9
 
 * Support TvOS
