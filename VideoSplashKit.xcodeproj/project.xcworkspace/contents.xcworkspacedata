@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:VideoSplash.xcodeproj">
+      location = "self:/Users/Cem/Desktop/VideoSplashKit/VideoSplashKit.xcodeproj">
    </FileRef>
 </Workspace>
