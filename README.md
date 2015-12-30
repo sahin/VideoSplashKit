@@ -1,6 +1,7 @@
 
 [![Build Status](https://travis-ci.org/movielala/VideoSplashKit.svg)](https://travis-ci.org/movielala/VideoSplashKit) ![Gitter](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/movielala/VideoSplashKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://img.shields.io/cocoapods/v/VideoSplashKit.svg)](https://img.shields.io/cocoapods/v/VideoSplashKit.svg)
 # VideoSplashKit - Video based UIViewController
 ![alt tag](http://oi57.tinypic.com/e5hi82.jpg)
 ##Introduction
