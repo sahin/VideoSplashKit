@@ -88,8 +88,14 @@ public class VideoSplashViewController: UIViewController {
         moviePlayer.view.frame = videoFrame
         moviePlayer.showsPlaybackControls = false
         moviePlayer.view.userInteractionEnabled = false
+        moviePlayer.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(moviePlayer.view)
         view.sendSubviewToBack(moviePlayer.view)
+        let views = ["movieView":moviePlayer.view]
+        let horisontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|[movieView]|", options: [], metrics: nil, views: views)
+        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[movieView]|", options: [], metrics: nil, views: views)
+        self.view.addConstraints(horisontalConstraints)
+        self.view.addConstraints(verticalConstraints)
         isMovieViewAdded = true
     }
   }
