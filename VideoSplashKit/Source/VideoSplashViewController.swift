@@ -82,12 +82,16 @@ public class VideoSplashViewController: UIViewController {
         }
     }
 
+  private var isMovieViewAdded = false
   override public func viewDidAppear(animated: Bool) {
-    moviePlayer.view.frame = videoFrame
-    moviePlayer.showsPlaybackControls = false
-    moviePlayer.view.userInteractionEnabled = false
-    view.addSubview(moviePlayer.view)
-    view.sendSubviewToBack(moviePlayer.view)
+    if isMovieViewAdded == false {
+        moviePlayer.view.frame = videoFrame
+        moviePlayer.showsPlaybackControls = false
+        moviePlayer.view.userInteractionEnabled = false
+        view.addSubview(moviePlayer.view)
+        view.sendSubviewToBack(moviePlayer.view)
+        isMovieViewAdded = true
+    }
   }
 
   override public func viewWillDisappear(animated: Bool) {
