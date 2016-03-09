@@ -82,12 +82,25 @@ public class VideoSplashViewController: UIViewController {
         }
     }
 
+  private var isMovieViewAdded = false
   override public func viewDidAppear(animated: Bool) {
-    moviePlayer.view.frame = videoFrame
-    moviePlayer.showsPlaybackControls = false
-    moviePlayer.view.userInteractionEnabled = false
-    view.addSubview(moviePlayer.view)
-    view.sendSubviewToBack(moviePlayer.view)
+    if isMovieViewAdded == false {
+        moviePlayer.view.frame = videoFrame
+        moviePlayer.showsPlaybackControls = false
+        moviePlayer.view.userInteractionEnabled = false
+        if #available(iOS 9, *) {
+            moviePlayer.allowsPictureInPicturePlayback = false
+        }
+        moviePlayer.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(moviePlayer.view)
+        view.sendSubviewToBack(moviePlayer.view)
+        let views = ["movieView":moviePlayer.view]
+        let horisontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|[movieView]|", options: [], metrics: nil, views: views)
+        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[movieView]|", options: [], metrics: nil, views: views)
+        self.view.addConstraints(horisontalConstraints)
+        self.view.addConstraints(verticalConstraints)
+        isMovieViewAdded = true
+    }
   }
 
   override public func viewWillDisappear(animated: Bool) {
