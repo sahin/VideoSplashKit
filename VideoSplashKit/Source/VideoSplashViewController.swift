@@ -88,6 +88,9 @@ public class VideoSplashViewController: UIViewController {
         moviePlayer.view.frame = videoFrame
         moviePlayer.showsPlaybackControls = false
         moviePlayer.view.userInteractionEnabled = false
+        if #available(iOS 9, *) {
+            moviePlayer.allowsPictureInPicturePlayback = false
+        }
         moviePlayer.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(moviePlayer.view)
         view.sendSubviewToBack(moviePlayer.view)
