@@ -84,6 +84,7 @@ public class VideoSplashViewController: UIViewController {
 
   override public func viewDidAppear(animated: Bool) {
     moviePlayer.view.frame = videoFrame
+    moviePlayer.view.backgroundColor = self.backgroundColor;
     moviePlayer.showsPlaybackControls = false
     moviePlayer.view.userInteractionEnabled = false
     view.addSubview(moviePlayer.view)
