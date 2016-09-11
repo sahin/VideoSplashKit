@@ -68,6 +68,10 @@ public class VideoCutter: NSObject {
         }
       }
       dispatch_async(dispatch_get_main_queue()) {
+        do {
+            try NSURL(fileURLWithPath: outputURL!).setResourceValue(true, forKey: NSURLIsExcludedFromBackupKey)
+        } catch _{
+        }
       }
     }
   }
