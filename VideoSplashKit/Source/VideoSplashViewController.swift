@@ -52,7 +52,7 @@ public class VideoSplashViewController: UIViewController {
     didSet {
       if alwaysRepeat {
         NSNotificationCenter.defaultCenter().addObserver(self,
-          selector: "playerItemDidReachEnd",
+          selector: #selector(playerItemDidReachEnd),
           name: AVPlayerItemDidPlayToEndTimeNotification,
           object: moviePlayer.player?.currentItem)
       }
@@ -75,7 +75,7 @@ public class VideoSplashViewController: UIViewController {
         didSet {
             if restartForeground {
                 NSNotificationCenter.defaultCenter().addObserver(self,
-                    selector: "playerItemDidReachEnd",
+                    selector: #selector(playerItemDidReachEnd),
                     name: UIApplicationWillEnterForegroundNotification,
                     object: nil)
             }
