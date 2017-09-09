@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812581051D9AF66900CEBB6B /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812581031D9AF66900CEBB6B /* VideoCutter.swift */; };
+		812581061D9AF66900CEBB6B /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812581041D9AF66900CEBB6B /* VideoSplashViewController.swift */; };
 		B208008E1C33868E0078F07C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208007F1C33868E0078F07C /* AppDelegate.swift */; };
 		B20800901C33868E0078F07C /* btnRegister.png in Resources */ = {isa = PBXBuildFile; fileRef = B20800821C33868E0078F07C /* btnRegister.png */; };
 		B20800911C33868E0078F07C /* btnSignin.png in Resources */ = {isa = PBXBuildFile; fileRef = B20800831C33868E0078F07C /* btnSignin.png */; };
 		B20800921C33868E0078F07C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20800841C33868E0078F07C /* Default-568h@2x.png */; };
 		B20800931C33868E0078F07C /* Museo500-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B20800851C33868E0078F07C /* Museo500-Regular.otf */; };
 		B20800941C33868E0078F07C /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B20800861C33868E0078F07C /* test.mp4 */; };
-		B20800951C33868E0078F07C /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20800881C33868E0078F07C /* VideoCutter.swift */; };
-		B20800961C33868E0078F07C /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20800891C33868E0078F07C /* VideoSplashViewController.swift */; };
 		B20800971C33868E0078F07C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208008A1C33868E0078F07C /* ViewController.swift */; };
 		B208009A1C3386A70078F07C /* VideoSplashKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208008D1C33868E0078F07C /* VideoSplashKitTests.swift */; };
 		B208009C1C3386B40078F07C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B208009B1C3386B40078F07C /* Images.xcassets */; };
@@ -31,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		812581031D9AF66900CEBB6B /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		812581041D9AF66900CEBB6B /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		B208007F1C33868E0078F07C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B20800801C33868E0078F07C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20800821C33868E0078F07C /* btnRegister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRegister.png; sourceTree = "<group>"; };
@@ -38,8 +40,6 @@
 		B20800841C33868E0078F07C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B20800851C33868E0078F07C /* Museo500-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo500-Regular.otf"; sourceTree = "<group>"; };
 		B20800861C33868E0078F07C /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
-		B20800881C33868E0078F07C /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
-		B20800891C33868E0078F07C /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		B208008A1C33868E0078F07C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B208008C1C33868E0078F07C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B208008D1C33868E0078F07C /* VideoSplashKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashKitTests.swift; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 		B20800871C33868E0078F07C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B20800881C33868E0078F07C /* VideoCutter.swift */,
-				B20800891C33868E0078F07C /* VideoSplashViewController.swift */,
+				812581031D9AF66900CEBB6B /* VideoCutter.swift */,
+				812581041D9AF66900CEBB6B /* VideoSplashViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -173,14 +173,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Toygar Dündaralp";
 				TargetAttributes = {
 					C3866ABA1B719452002C4FA3 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					C3866ACF1B719452002C4FA3 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = C3866ABA1B719452002C4FA3;
 					};
 				};
@@ -232,10 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20800951C33868E0078F07C /* VideoCutter.swift in Sources */,
+				812581051D9AF66900CEBB6B /* VideoCutter.swift in Sources */,
 				B208008E1C33868E0078F07C /* AppDelegate.swift in Sources */,
 				B20800971C33868E0078F07C /* ViewController.swift in Sources */,
-				B20800961C33868E0078F07C /* VideoSplashViewController.swift in Sources */,
+				812581061D9AF66900CEBB6B /* VideoSplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +273,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -317,8 +321,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -337,6 +343,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -348,11 +355,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/VideoSplashKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoSplashKit;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -362,11 +371,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/VideoSplashKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoSplashKit;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -386,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoSplashKit;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoSplashKit.app/VideoSplashKit";
 			};
 			name = Debug;
@@ -402,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoSplashKit;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoSplashKit.app/VideoSplashKit";
 			};
 			name = Release;
