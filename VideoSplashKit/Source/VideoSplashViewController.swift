@@ -16,20 +16,20 @@ public enum ScalingMode {
     case resizeAspectFill
 }
 
-public class VideoSplashViewController: UIViewController {
+open class VideoSplashViewController: UIViewController {
     
     private let moviePlayer = AVPlayerViewController()
     private var moviePlayerSoundLevel: Float = 1.0
     
-    public var videoFrame: CGRect = CGRect()
-    public var startTime: CGFloat = 0.0
-    public var duration: CGFloat = 0.0
-    public var backgroundColor = UIColor.black { didSet { view.backgroundColor = backgroundColor } }
-    public var contentURL: URL = URL(fileURLWithPath: "") { didSet { setMoviePlayer(url: contentURL) } }
-    public var sound: Bool = true { didSet { moviePlayerSoundLevel = sound ? 1 : 0 } }
-    public var alpha: CGFloat = 1 { didSet { moviePlayer.view.alpha = alpha } }
+    open var videoFrame: CGRect = CGRect()
+    open var startTime: CGFloat = 0.0
+    open var duration: CGFloat = 0.0
+    open var backgroundColor = UIColor.black { didSet { view.backgroundColor = backgroundColor } }
+    open var contentURL: URL = URL(fileURLWithPath: "") { didSet { setMoviePlayer(url: contentURL) } }
+    open var sound: Bool = true { didSet { moviePlayerSoundLevel = sound ? 1 : 0 } }
+    open var alpha: CGFloat = 1 { didSet { moviePlayer.view.alpha = alpha } }
     
-    public var alwaysRepeat: Bool = true {
+    open var alwaysRepeat: Bool = true {
         
         didSet {
             
@@ -46,7 +46,7 @@ public class VideoSplashViewController: UIViewController {
         }
     }
     
-    public var fillMode: ScalingMode = .resizeAspectFill {
+    open var fillMode: ScalingMode = .resizeAspectFill {
         didSet {
             switch fillMode {
             case .resize:
@@ -59,7 +59,7 @@ public class VideoSplashViewController: UIViewController {
         }
     }
     
-    public var restartForeground: Bool = false {
+    open var restartForeground: Bool = false {
         didSet {
             if restartForeground {
                 NotificationCenter.default.addObserver(forName:.UIApplicationWillEnterForeground, object:nil, queue:nil) { [weak self] (notification) in
@@ -69,7 +69,7 @@ public class VideoSplashViewController: UIViewController {
         }
     }
     
-    override public func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         moviePlayer.view.frame = videoFrame
         moviePlayer.view.backgroundColor = self.backgroundColor;
@@ -90,7 +90,7 @@ public class VideoSplashViewController: UIViewController {
         }
     }
     
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         guard let player = object as? AVPlayer else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
@@ -108,7 +108,7 @@ public class VideoSplashViewController: UIViewController {
     }
     
     // Override in subclass
-    public func movieReadyToPlay() { }
+    open func movieReadyToPlay() { }
     
     func playerItemDidReachEnd() {
         moviePlayer.player?.seek(to: kCMTimeZero)
