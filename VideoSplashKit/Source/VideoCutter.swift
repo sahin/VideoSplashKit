@@ -55,7 +55,7 @@ public class VideoCutter: NSObject {
             exportSession.outputURL = outputURL
             exportSession.timeRange = range
             exportSession.shouldOptimizeForNetworkUse = true
-            exportSession.outputFileType = AVFileTypeMPEG4
+            exportSession.outputFileType = AVFileType.mp4
             exportSession.exportAsynchronously(completionHandler: {
                 switch exportSession.status {
                 case .completed:
