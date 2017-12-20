@@ -23,6 +23,11 @@ and
 ```
 pod 'VideoSplashKit'
 ```
+or if you are using Swift4
+
+```
+pod 'VideoSplashKit', :git => 'https://github.com/svtek/VideoSplashKit/VideoSplashKit.git', :branch => 'swift4'
+```
 
 Then, run the following command:
 
