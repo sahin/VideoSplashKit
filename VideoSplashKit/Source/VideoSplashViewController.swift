@@ -50,11 +50,11 @@ open class VideoSplashViewController: UIViewController {
         didSet {
             switch fillMode {
             case .resize:
-                moviePlayer.videoGravity = AVLayerVideoGravityResize
+                moviePlayer.videoGravity = AVLayerVideoGravity.resize
             case .resizeAspect:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect
             case .resizeAspectFill:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
             }
         }
     }
@@ -62,7 +62,7 @@ open class VideoSplashViewController: UIViewController {
     open var restartForeground: Bool = false {
         didSet {
             if restartForeground {
-                NotificationCenter.default.addObserver(forName:.UIApplicationWillEnterForeground, object:nil, queue:nil) { [weak self] (notification) in
+                NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object:nil, queue:nil) { [weak self] (notification) in
                     self?.playerItemDidReachEnd()
                 }
             }
@@ -76,7 +76,7 @@ open class VideoSplashViewController: UIViewController {
         moviePlayer.showsPlaybackControls = false
         moviePlayer.view.isUserInteractionEnabled = false
         view.addSubview(moviePlayer.view)
-        view.sendSubview(toBack: moviePlayer.view)
+        view.sendSubviewToBack(moviePlayer.view)
     }
     
     private func setMoviePlayer(url: URL){
@@ -111,7 +111,7 @@ open class VideoSplashViewController: UIViewController {
     open func movieReadyToPlay() { }
     
     func playerItemDidReachEnd() {
-        moviePlayer.player?.seek(to: kCMTimeZero)
+        moviePlayer.player?.seek(to: CMTime.zero)
         moviePlayer.player?.play()
     }
     
